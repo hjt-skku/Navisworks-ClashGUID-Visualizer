@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>ClashGuidVisualizer</AssemblyName>
+    <Version>0.1.2</Version>
+    <!-- Navisworks Manage 2025 install folder. Override: dotnet build -p:NavisworksDir="D:\...\" -->
+    <NavisworksDir Condition="'$(NavisworksDir)' == ''">C:\Program Files\Autodesk\Navisworks Manage 2025\</NavisworksDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="Autodesk.Navisworks.Api"><HintPath>$(NavisworksDir)Autodesk.Navisworks.Api.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Autodesk.Navisworks.Clash"><HintPath>$(NavisworksDir)Autodesk.Navisworks.Clash.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Navisworks.Clash.Plugin"><HintPath>$(NavisworksDir)Navisworks.Clash.Plugin.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Syncfusion.Grid.WPF"><HintPath>$(NavisworksDir)Syncfusion.Grid.WPF.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Syncfusion.GridCommon.WPF"><HintPath>$(NavisworksDir)Syncfusion.GridCommon.WPF.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Syncfusion.Shared.WPF"><HintPath>$(NavisworksDir)Syncfusion.Shared.WPF.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

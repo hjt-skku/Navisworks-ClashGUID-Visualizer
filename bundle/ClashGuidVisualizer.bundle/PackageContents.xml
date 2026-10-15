@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" Name="ClashGuidVisualizer" AppVersion="0.1.2.0" ProductType="Application" Author="hjt-skku" ProductCode="{5912E782-EAF7-441C-BA84-8BAA006E10B2}">
+  <Components Description="Navisworks 2025 parts">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw22" SeriesMax="Nw22" />
+    <ComponentEntry AppName="ClashGuidVisualizer" AppType="ManagedPlugin" ModuleName="./Contents/2025/ClashGuidVisualizer.dll" />
+  </Components>
+</ApplicationPackage>
